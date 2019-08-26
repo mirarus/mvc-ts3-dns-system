@@ -36,10 +36,10 @@ DROP TABLE IF EXISTS `dns`;
 CREATE TABLE `dns`  (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `u_id` int(11) NULL DEFAULT NULL,
-  `dns` varchar(255) CHARACTER SET latin1 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `name` varchar(100) CHARACTER SET latin1 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `domain` varchar(100) CHARACTER SET latin1 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `ip` varchar(100) CHARACTER SET latin1 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `dns` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `domain` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `ip` varchar(100)  CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `port` int(11) NULL DEFAULT NULL,
   `time` int(20) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
@@ -51,9 +51,9 @@ CREATE TABLE `dns`  (
 DROP TABLE IF EXISTS `dns_config`;
 CREATE TABLE `dns_config`  (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `mail` varchar(100) CHARACTER SET latin1 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `apikey` varchar(100) CHARACTER SET latin1 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `domain` text CHARACTER SET latin1 COLLATE utf8_general_ci NULL,
+  `mail` varchar(100)  CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `apikey` varchar(100)  CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `domain` text  CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
   `time` int(20) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = MyISAM AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
@@ -75,7 +75,7 @@ CREATE TABLE `site_config`  (
 -- ----------------------------
 -- Records of site_config
 -- ----------------------------
-INSERT INTO `site_config` VALUES (1, 'Mirarus DNS SYSTEM', 'Mirarus DNS SYSTEM', 'Mirarus DNS SYSTEM', 'Copyright © 2019 Mirarus DNS SYSTEM. All rights reserved.', 1566668980);
+INSERT INTO `site_config` VALUES (1, 'Mirarus DNS SYSTEM', 'Mirarus DNS SYSTEM', 'Mirarus DNS SYSTEM', 'Copyright Â© 2019 Mirarus DNS SYSTEM. All rights reserved.', 1566668980);
 
 -- ----------------------------
 -- Table structure for support_replies
