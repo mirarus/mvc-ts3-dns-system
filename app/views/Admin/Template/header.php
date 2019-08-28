@@ -75,7 +75,7 @@
 						</a>
 						<div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
 							<?php $pw_url = explode('url=', $_SERVER['QUERY_STRING'])['1']; ?>
-							<a class="dropdown-item" href="#" onclick="PasswordChange('<?php echo SITE_URL.'/'.$pw_url; ?>');">
+							<a class="dropdown-item" href="#" onclick="PasswordChange('<?php echo SITE_URL.'/'.$pw_url; ?>', '<?php echo SITE_URL; ?>');">
 								<i class="mdi mdi-account-key mr-2 text-primary"></i>
 								Şifre Değiştir
 							</a>
