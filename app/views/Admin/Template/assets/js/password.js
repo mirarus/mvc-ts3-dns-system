@@ -1,4 +1,4 @@
-function PasswordChange(surl) {
+function PasswordChange(surl, surl2) {
 	swal({
 		title: 'Şifre Değişikliği',
         content: {
@@ -31,7 +31,7 @@ function PasswordChange(surl) {
 			var password	= $(".swal-content__input").val();
 			$.ajax({
 				type: "POST",
-				url: "../operation/admin/user_password",
+				url: surl2 + "/operation/admin/user_password",
 				data: {"password":password},
 				success: function(reply){
 					swal({
